@@ -190,13 +190,13 @@ TRABAJAR CON REPOSITORIOS REMOTOS
     git fetch [nombre]                            Sirve para traer toda la informacion que tiene [nombre] pero que yo no tengo en mi repositorio
     git fetch origin                              Se trae todo el trabajo nuevo que ha sido enviado al servidor desde que lo clonaste
     git pull                                      Trae una rama remota y automaticamente trata de combianrla con la rama en la que estas
-    git push [nombre-remoto] [nombre-rama]        Sirve para enviar tu rama a un servidor
+    git push origin [branch-name]        Sirve para enviar tu rama a un servidor
     
     -       git push origin master                Manda tu rama master al servidor origin, solo sirver si tiene permisos de escritura
     -                                             y si nadie clono el mismo repositorio y envio informacion, en ese caso sera necesario
     -                                             traer su rama, combinarla y luego hacer el envio
 
-    -       git push origin [nombre-X]:[nombre-Y] Manda tu rama local x a la rama y del servidor 
+    -       git push origin [branch-X]:[branch-Y] Manda tu rama local x a la rama y del servidor 
     
     git remote show origin                        Te permite ver mas informacion de un remoto en particular,
     git remote rename old_name new_name           Renombra un reporitorio remoto
