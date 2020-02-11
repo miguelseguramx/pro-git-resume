@@ -1,22 +1,4 @@
-CONFIGURACION DE GITHUB
 
-    git config core.editor                 Configura un editor para escribir los mensajes de los commmits
-
-    git config --global alisas.co checkout        Crea un alias para el commando checkout con el nombre de co
-    git config --global alias.ci commit           Crea un alias para el commando commit con el nombre de ci
-    git config --global alias.st status           Crea un alias para el commando status con el nombre de st
-
-    -             git co / git ci / git st 
-
-    git config --global alias.unstage 'reset HEAD --'   Los alias pueden servir para mejorar el uso intuitivo de git 
-    
-    -             git unstage [file-name]
-
-    git config --global alias.last 'log -1 HEAD'        Te muestra cual fue la ultima confirmacion realizada
-    git config --global alias.visual '!gitk'            Si deseas ejecutar un commando externo usa ! antes de el
-
-    
-INICIALIZAR UN REPOSITORIO 
 # CONFIGURACIÓN DE GITHUB
 
 |  Comando | Descripción 
@@ -112,41 +94,49 @@ INICIALIZAR UN REPOSITORIO
   |  git log --pretty      |     Muestra cada commit en ciertos formatos |
     
 
----
-    -        oneline    short    full    fuller    format
+
+>            oneline    short    full    fuller    format
+
+|Comando | Descripción|
+|-|-|
+|   git log --pretty=format   | Te permite especificar tu propio formato|
+
+|Comando  | Descripción |
+|-|-|
+    |  %H     |      Hash de la confirmacion|
+    |    %h    |        Hash de la confirmacion abreviado|
+    |    %t     |       Hash del arbol |
+    |    %T    |        Hash del arbol abreviado|
+    |   %P     |       Hashes de las confirmaciones padre |
+    |  %p      |      Hashes de las confirmaciones padre abreviados |
+    |      %an     |      Nombre del autor|
+    |       %ae     |      Direccion de correo electronico del autor |
+    |       %ad      |     Fecha de autoria |
+    |       %ar     |      Fecha de autoria relativa|
+    |       %cm    |       Nombre del confirmador|
+    |       %ce      |     Direccion de correo electronico del confirmador|
+    |      %cd        |   Fecha de confirmacion|
+    |       %cr     |      Fecha de confirmacion, relativa|
+    |       %s     |       Asunto|
     
-    git log --pretty=format    Te permite especificar tu propio formato
-            
-    -       %H            Hash de la confirmacion
-    -       %h            Hash de la confirmacion abreviado
-    -       %t            Hash del arbol 
-    -       %T            Hash del arbol abreviado
-    -       %P            Hashes de las confirmaciones padre 
-    -       %p            Hashes de las confirmaciones padre abreviados
-    -       %an           Nombre del autor
-    -       %ae           Direccion de correo electronico del autor 
-    -       %ad           Fecha de autoria 
-    -       %ar           Fecha de autoria relativa
-    -       %cm           Nombre del confirmador
-    -       %ce           Direccion de correo electronico del confirmador
-    -       %cd           Fecha de confirmacion
-    -       %cr           Fecha de confirmacion, relativa
-    -       %s            Asunto
+| Comando  | Descripción  |
+|-|-|
+ |   git log --graph           |   Muestra un grafico de confirmaciones y uniones, se puede usar con cualquier otra opcion|
+ |  git log --shortstat        |  Muestra solo las estadisticas|
+ |   git log --name-only       |   Muestra solo los archivos afectados|
+ |   git log --relative-date   |   Muestra la fecha en formato relativo|
+ |   git log --since=2.weeks   |   Muestra los commits ocurridos desde hace dos semanas|
+ |   git log --autor           |   Filtra los commmits por autor |
+ |   git log --grep            |   Filtra los commmits por palabras clave en los mensajes de confirmacion|
+ |   git log --all-match       |   Filtra los commmits por dos o mas tipos de opciones como autor y palabras claves|
+ |   git log --S               |   Recibe una cadena y solo muestra las confirmaciones que cambiaron el codigo añadiendo o eliminando una cadena|
     
-    git log --graph              Muestra un grafico de confirmaciones y uniones, se puede usar con cualquier otra opcion
-    git log --shortstat          Muestra solo las estadisticas
-    git log --name-only          Muestra solo los archivos afectados
-    git log --relative-date      Muestra la fecha en formato relativo
-    git log --since=2.weeks      Muestra los commits ocurridos desde hace dos semanas
-    git log --autor              Filtra los commmits por autor 
-    git log --grep               Filtra los commmits por palabras clave en los mensajes de confirmacion
-    git log --all-match          Filtra los commmits por dos o mas tipos de opciones como autor y palabras claves
-    git log --S                  Recibe una cadena y solo muestra las confirmaciones que cambiaron el codigo añadiendo o eliminando una cadena
+>            git log --Sfunction_name
     
-    .             git log --Sfunction_name
-    
-    git log --/src/js/app.js     Debe ser la ultima opcion, recibe una ruta y muestra los commits que introdujeron cambios a un determinado archivo
-    git log --since, --after     Muestra los commits hechas despues de la fecha especificada
+| | |
+|-|-|
+   | git log --/src/js/app.js    | Debe ser la ultima opcion, recibe una ruta y muestra los commits que introdujeron cambios a un determinado archivo |
+   | git log --since, --after    | Muestra los commits hechas despues de la fecha especificada|
     
     .             git log --since="2008-10-01"
     
