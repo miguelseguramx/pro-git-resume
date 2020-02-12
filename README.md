@@ -2,12 +2,55 @@
 
 ### Configuracion `git config`
 
-<<<<<<< HEAD
+
+
+### `git reset`
+
+### `git rm`
+
+### `git clean`
+
+## RAMIFICAR Y FUSIONAR 
+
+### `git branch`
+### `git checkout`
+### `git merge`
+### `git mergetool`
+### `git log`
+### `git stash`
+### `git tag`
+
+## USANDO REPOSITORIOS REMOTOS
+
+### `git fetch`
+### `git pull`
+### `git push`
+### `git remote`
+### `git archive`
+### `git  submodule`
+
+## INSPECCION Y COMPARACION 
+
+### `git show`
+### `git shortlog`
+### `git describe`
+
+## DEPURACION
+
+### `git bisect`
+### `git blame`
+### `git grep`
+
+## PARCHEO
+
+### `git cherry-pick`
+### `git rebase`
+### `git revert`
+
 #CONFIGURACION DE GITHUB
     | | |
     |-|-|
     |git config core.editor         |        Configura un editor para escribir los mensajes de los commmits|
-=======
 |  Comando | Descripción 
 | ------------ | ------------ |
 |  `git config core.editor `                 |   Configura un editor para escribir los mensajes de los commmits  |  
@@ -153,49 +196,6 @@
    |`git log --since, --after`| Muestra los commits hechas despues de la fecha especificada|
 
 
-### `git reset`
-
-### `git rm`
-
-### `git clean`
-
-## RAMIFICAR Y FUSIONAR 
-
-### `git branch`
-### `git checkout`
-### `git merge`
-### `git mergetool`
-### `git log`
-### `git stash`
-### `git tag`
-
-## USANDO REPOSITORIOS REMOTOS
-
-### `git fetch`
-### `git pull`
-### `git push`
-### `git remote`
-### `git archive`
-### `git  submodule`
-
-## INSPECCION Y COMPARACION 
-
-### `git show`
-### `git shortlog`
-### `git describe`
-
-## DEPURACION
-
-### `git bisect`
-### `git blame`
-### `git grep`
-
-## PARCHEO
-
-### `git cherry-pick`
-### `git rebase`
-### `git revert`
->>>>>>> b95fda1ff03a082d758666c021899b0dd53abf28
 
     |git config --global alisas.co checkout      |  Crea un alias para el commando checkout con el nombre de co |
     |git config --global alias.ci commit         |  Crea un alias para el commando commit con el nombre de ci |
